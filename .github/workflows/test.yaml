@@ -1,0 +1,13 @@
+name: sample-workflow
+
+on:
+  push:
+    branches:
+      - main   # runs on every commit pushed to main
+
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World Step
+        run: echo "Hello, World!"
